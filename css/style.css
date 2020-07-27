@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'coneria-script';
+    src: url(../fonts/coneria-script/Demo_ConeriaScript_Slanted.ttf);
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lateef';
+    src: url(../fonts/Lateef/Lateef-Regular.ttf);
+}
+
+:root {
+    --color-primary: #00122C;
+    --color-secondary: #132F57;
+    --text-light: #ffffff;
+    --bg-color: #f0f6ff;
+    --font-all: 'lateef';
+    --font-tittle: 'GreatVibes';
+}
+
+
+
+.navbar {
+    background-color: var(--color-primary);
+}
+
+.brand {
+    font-family: var(--font-tittle);
+    color: var(--text-light);
+}
+
+Body {
+    background-color: var(--bg-color);
+
+}
+
+.paralax {
+    background-image: url(../images/about-ppal.jpg);
+    height: 150px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: var(--text-light);
+
+}
+
+.navbar-nav {
+    font-family: var(--font-all);
+    font-size: 2em;
+}
+
+.footer {
+    background-color: var(--color-primary);
+    height: 90px;
+    color: var(--text-light)
+}
+
+
+.icon {
+    color: var(--text-light);
+    font-size: 1.5em;
+
+
+}
+
+.icon2 {
+    color: var(--color-secondary);
+    font-size: 3em;
+}
+
+.img3 {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.h3 {
+    color: var(--color-secondary);
+}
+
+.inicio {
+    background-color: var(--color-secondary);
+
+}
