@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,6 +15,283 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg  navbar-dark sticky-top">
+        <a class="navbar-brand brand display-3" href="./home.html">
+            <h1 class="brand display-4 px-lg-5">Wanderlust</h1>
+
+        </a>
+        <div class="mov">
+            <button type="button" data-toggle="modal" data-target="#session"
+                class="inicio btn btn-dark my-3 px-lg-3 py-lg-2 ">Inicia
+                sesión</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end  px-lg-5" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item  ">
+                    <a class="nav-link px-lg-3" href="#">Inicio</a>
+                </li>
+
+                <li class="nav-item active  px-lg-3">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Viajes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>-->
+
+                <li class="nav-item">
+                    <a class="nav-link  px-lg-3" href="#">Destinos</a>
+                </li>
+                <li class="nav-item  px-lg-3">
+                    <a class="nav-link" href="#">Programas</a>
+                </li>
+                <li class="nav-item  px-lg-3">
+                    <a class="nav-link" href="#">contactos</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <main>
+        <div class="paralax  d-flex justify-content-center align-items-center ">
+
+            <p class="display-1"> NOSOTROS</p>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="  col-lg-8 my-5">
+                    <h1>¿Quienes Somos?</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate deserunt ex, voluptas error
+                        consequatur veniam blanditiis similique, architecto eos dolorum sit tempora rerum ut laudantium
+                        praesentium ratione quae fugit illum cum distinctio maxime. Omnis, nulla eveniet. Temporibus
+                        repudiandae quod sequi at sunt. Excepturi, distinctio voluptatem, assumenda perferendis qui quae
+                        repellendus voluptatibus quo molestiae ducimus accusamus nam alias nobis unde, delectus suscipit
+                        esse optio veniam? Ex, vel? Eos itaque sed doloribus alias incidunt quidem, qui sunt nam vitae,
+                        nesciunt modi obcaecati repellat voluptatibus! Enim temporibus commodi, culpa minus non
+                        doloribus asperiores quaerat cum, similique corporis natus facere rerum est eveniet tempore
+                        assumenda quidem veniam aliquid incidunt? Ullam reiciendis id cupiditate aliquid incidunt magni
+                        vitae fugiat laborum accusamus obcaecati eaque saepe cum quod quis, minus quo dicta fugit neque
+                        error officia cumque repudiandae esse. Ipsam, quia. Asperiores dolorum, fugiat eius, quisquam
+                        rem natus cumque placeat dolore alias nulla reprehenderit maiores beatae explicabo qui? Maiores,
+                        dignissimos amet aut eius facilis iure quisquam corrupti consequuntur deleniti repellat eaque
+                        eos praesentium eveniet obcaecati optio, expedita ea dolor harum quos. Inventore vel quas
+                        explicabo dolore, expedita eius fuga cumque a commodi quam, hic vero cupiditate fugit in, quidem
+                        ipsum velit iusto. Natus obcaecati, fugit dolorem, vero ab impedit neque quos porro enim
+                        consequuntur distinctio non corporis amet cumque, animi quas consequatur voluptatem culpa
+                        corrupti error nam nesciunt nostrum quisquam? Ullam dolorem eligendi, a esse ab quia temporibus
+                        vero cupiditate rerum alias, voluptate, quibusdam eos. Laboriosam quo blanditiis tempora ullam
+                        velit deleniti? Sapiente eveniet fugiat distinctio cupiditate?
+
+                    </p>
+                </div>
+                <div class="col-lg-4 my-3 ">
+                    <div class="bg-light p-3 my-5">
+                        <i class="icon2 fas fa-route"></i>
+                        <span class="h3">Años de trabajo</span>
+                        <p class="mt-3"> Desde 2015 cientos de personas han realizado sus viajes y sueños de estudiar y
+                            trabajar en otros países acompañados por nuestro gran equipo de trabajo y por medio de
+                            excelentes
+                            convenios internacionales </p>
+                    </div>
+                    <div class="bg-light p-3 my-5 ">
+                        <i class="icon2 fas fa-globe-europe"></i>
+                        <span class="h3">Experiencias</span>
+                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dignissimos
+                            consequatur natus,
+                            qui reprehenderit repudiandae eligendi in quidem harum repellat ut omnis laborum aut vitae!
+                            Ad ea iste nesciunt velit.
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class=" container">
+            <img class=" d-flex m-auto w-75" src="./images/mapas2.png" alt="">
+
+        </div>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img3" src="./images/vision.jpg" alt="">
+                </div>
+                <div class="col-lg-6 text-center p-5">
+                    <h3>Vision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi iure exercitationem
+                        velit
+                        dolorem veniam facilis, voluptate dignissimos magnam recusandae sequi nemo provident iste ipsum
+                        ad
+                        neque cum numquam ducimus?</p>
+                </div>
+
+
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 text-center p-5">
+
+                    <h3 class="m-auto">mision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi iure
+                        exercitationem
+                        velit
+                        dolorem veniam facilis, voluptate dignissimos magnam recusandae sequi nemo provident iste
+                        ipsum
+                        ad
+                        neque cum numquam ducimus?</p>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <img class="img3" src="./images/mision.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="d-flex justify-content-center ">
+
+            <a class="m-2" href="#"><i class=" icon fab fa-facebook-square"></i></a>
+
+            <a class="m-2" href="#"><i class=" icon fab fa-twitter-square"></i></a>
+
+            <a class="m-2" href="#"><i class="  icon fab fa-youtube"></i></a>
+
+            <a class="m-2" href="#"><i class=" icon fab fa-instagram"></i></a>
+
+
+        </div>
+        <p>Copytight 2020 - Wonderlast</p>
+    </footer>
+    <!--Inicio de sesion-->
+    <div class="modal fade" id="session" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header inicio text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Inicie sesión
+                    </h5>
+
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="inicios" action="./home.html" method="POST">
+                        <div class="form-group">
+                            <label for="e-mail" class="col-form-label">Usuario </label>
+                            <input type="email" class="form-control" id="e-mail" required
+                                placeholder="Ingrese su correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <a href="">Olvidé mi contraseña</a>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button form="inicios" type="submit" class="btn btn-secondary">
+                        Inciar sesión
+                    </button>
+                    <button type="button" class="btn inicio text-light" data-toggle="modal" data-dismiss="modal"
+                        data-target="#registrer">
+                        registrarse
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Registro-->
+    <div class="modal fade" id="registrer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header inicio text-light">
+                    <h5 class="modal-title" id="exampleModalLabel1">
+                        Inicie sesión
+                    </h5>
+
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="./home.html" method="POST">
+                        <div class="form-group">
+                            <label for="Nombre" class="col-form-label">Nombre </label>
+                            <input type="Text" class="form-control" id="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Apellido" class="col-form-label">Apellido </label>
+                            <input type="Text" class="form-control" id="Apellido" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo" class="col-form-label">Correo </label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseña" class="col-form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" required
+                                pattern="[A-Za-z0-9]{5,12" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseña" class="col-form-label">Repita la contraseña</label>
+                            <input type="password" class="form-control" id="contraseña2" name="contraseña" required
+                                pattern="[A-Za-z0-9]{5,12}" required>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Terminos" name="Terminos">
+                            <span>Acepto<a href=""> los términos y condiciones </a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
