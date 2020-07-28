@@ -1,0 +1,120 @@
+@media only screen and (min-width: 576px) {
+
+
+} 
+
+@media only screen and (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+    }
+
+    .pill-container {
+        display: flex;
+        /* margin: 5% 0; */
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .info {
+        margin: 1em 4em 0 0;
+        word-spacing: 4px;
+        text-align: justify;
+    }
+
+    .imagen {
+        width: 90%;
+        border-radius: 1em;
+    }
+
+    .nav-link {
+        /*Atributos agregados*/
+        background-color: #132F57;
+        color: white;
+        width: 140%;
+        margin-bottom: 1em;
+    }
+
+    .btn {
+        padding: .5em;
+        font-size: 18px;
+        background-color: #132F57;
+    }
+
+    .dropdown {
+        /* text-align: center; */
+        /* margin: 1em; */
+        margin-bottom: 1em;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+        background-color: #132F57;
+    }
+
+    .dropdown-item {
+        color: white;
+    }
+
+    .icon {
+        color: #00122C;
+        margin-right: 1em;
+        font-size: 45px;
+    }
+
+    .cotiza-cont-desktop {
+        display: block;
+        /* position: absolute; */
+        text-align: end;
+        margin-right: 1em;
+        /* bottom: 80px;
+    right: 160px; */
+
+    }
+
+    .cotiza-desktop {
+        background-color: #132F57;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: .5em;
+
+        width: 8em;
+        height: 3em;
+
+    }
+
+    .cotiza-desktop:hover {
+        background-color: #00122C;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .cotiza-cont-mobile {
+        display: none;
+    }
+
+    .country-container {
+        display: flex;
+        margin: 0 0 0 5em;
+        padding: 0;
+    }
+
+    .icon-info {
+        /*Atributos agregados*/
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .icon {
+        margin: 1.2em 0;
+    }
+
+    .text {
+        margin: 4.4em 1em;
+    }
+}

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
     <link rel="stylesheet" href="./css/style-plans.css">
+    <link rel="stylesheet" href="./css/responsive-plans.css">
 </head>
 
 <body>
@@ -18,67 +20,104 @@
 
     <div class="bg-europa container-fluid"></div>
 
-    <div class="aa container-sm">
+    <div class="aa container-sm pill-container">
 
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            Busca tu destino
-            <i class="sort-down fas fa-sort-down"></i>
-        </button>
+        <div class="menu-mobile">
 
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Busca tu destino
+                <i class="sort-down fas fa-sort-down"></i>
+            </button>
 
-                <div class="dropdown-cont">
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownContinenteButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Continente
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownContinenteButton">
-                            <a class="dropdown-item" href="index-mobile-africa.html">Africa</a>
-                            <a class="dropdown-item" href="index-mobile-asia.html">Asia</a>
-                            <a class="dropdown-item" href="index-mobile-europa.html">Europa</a>
-                        </div>
-                    </div>
+                    <div class="dropdown-cont">
 
-
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEuropaButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Europa
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownEuropaButton">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
-
-                                <a class="nav-link active" id="v-pills-reino-unido-tab" data-toggle="pill"
-                                    href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
-                                    aria-selected="true">Reino Unido</a>
-
-                                <a class="nav-link" id="v-pills-italia-tab" data-toggle="pill" href="#v-pills-italia"
-                                    role="tab" aria-controls="v-pills-italia" aria-selected="false">Italia</a>
-
-                                <a class="nav-link" id="v-pills-alemania-tab" data-toggle="pill"
-                                    href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
-                                    aria-selected="false">Alemania</a>
-
-                                <a class="nav-link" id="v-pills-francia-tab" data-toggle="pill" href="#v-pills-francia"
-                                    role="tab" aria-controls="v-pills-francia" aria-selected="false">Francia</a>
-
-                                <a class="nav-link" id="v-pills-grecia-tab" data-toggle="pill" href="#v-pills-grecia"
-                                    role="tab" aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
-
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownContinenteButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Continente
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownContinenteButton">
+                                <a class="dropdown-item" href="index-mobile-africa.html">Africa</a>
+                                <a class="dropdown-item" href="index-mobile-asia.html">Asia</a>
+                                <a class="dropdown-item" href="index-mobile-europa.html">Europa</a>
                             </div>
                         </div>
+
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEuropaButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Europa
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownEuropaButton">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+
+                                    <a class="nav-link active" id="v-pills-reino-unido-tab" data-toggle="pill"
+                                        href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
+                                        aria-selected="true">Reino Unido</a>
+
+                                    <a class="nav-link" id="v-pills-italia-tab" data-toggle="pill"
+                                        href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
+                                        aria-selected="false">Italia</a>
+
+                                    <a class="nav-link" id="v-pills-alemania-tab" data-toggle="pill"
+                                        href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
+                                        aria-selected="false">Alemania</a>
+
+                                    <a class="nav-link" id="v-pills-francia-tab" data-toggle="pill"
+                                        href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
+                                        aria-selected="false">Francia</a>
+
+                                    <a class="nav-link" id="v-pills-grecia-tab" data-toggle="pill"
+                                        href="#v-pills-grecia" role="tab" aria-controls="v-pills-grecia"
+                                        aria-selected="false">Grecia</a>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
+
         </div>
 
+        <div class="menu-desktop">
+
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownContinenteButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Continente
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownContinenteButton">
+                        <a class="dropdown-item" href="index-mobile-africa.html">Africa</a>
+                        <a class="dropdown-item" href="index-mobile-asia.html">Asia</a>
+                        <a class="dropdown-item" href="index-mobile-europa.html">Europa</a>
+                    </div>
+                </div>
+
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-reino-unido"
+                    role="tab" aria-controls="v-pills-reino-unido" aria-selected="true">Reino Unido</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia" role="tab"
+                    aria-controls="v-pills-italia" aria-selected="false">Italia</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-alemania" role="tab"
+                    aria-controls="v-pills-alemania" aria-selected="false">Alemania</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-francia" role="tab"
+                    aria-controls="v-pills-francia" aria-selected="false">Francia</a>
+                <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-grecia" role="tab"
+                    aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
+            </div>
+
+        </div>
 
         <div class="tab-content" id="v-pills-tabContent">
 
@@ -143,12 +182,15 @@
                             <h1 class="display-6">Italia</h1>
                         </div>
                         <img class="imagen" src="./images/images-plans/roma-cristina-gottardi-I1Lv2yX67GI-unsplash.jpg"
-                            alt="imagen-roma">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
+                            alt="imagen-londres">
+                        <div class="info uk-info">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas necessitatibus
+                                quas sed debitis mnis. Sapiente, molestiae. Excepturi molestiae repellat cupiditate
+                                dicta
+                                minima in
+                                nesciunt? A vitae
+                                eligendi vero dignissimos.
+                            </p>
                         </div>
                     </div>
 
@@ -156,9 +198,9 @@
                         <div class="icon-info">
                             <div class="icon-cont">
 
-                                <div class="icon"><i class="fas fa-city"></i></div>
-                                <div class="icon"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon"><i class="fas fa-language"></i></div>
+                                <div><i class="fas fa-city"></i></div>
+                                <div><i class="fas fa-money-bill"></i></div>
+                                <div><i class="fas fa-language"></i></div>
 
                             </div>
                             <div class="icon-text">
@@ -171,6 +213,7 @@
                         <div class="cotiza-cont-desktop">
                             <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
                         </div>
+
                     </div>
 
                 </div>
@@ -188,7 +231,8 @@
                         <div class="title">
                             <h1 class="display-6">Alemania</h1>
                         </div>
-                        <img class="imagen" src="./images/images-plans/berlin-claudio-schwarz-purzlbaum-TScGhJM716g-unsplash.jpg"
+                        <img class="imagen"
+                            src="./images/images-plans/berlin-claudio-schwarz-purzlbaum-TScGhJM716g-unsplash.jpg"
                             alt="imagen-berlin">
                         <div class="info italia-info">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
@@ -280,7 +324,8 @@
                         <div class="title">
                             <h1 class="display-6">Grecia</h1>
                         </div>
-                        <img class="imagen" src="./images/images-plans/grecia-d-f-y-b-travel-captures-4FzjlYVk7fg-unsplash.jpg"
+                        <img class="imagen"
+                            src="./images/images-plans/grecia-d-f-y-b-travel-captures-4FzjlYVk7fg-unsplash.jpg"
                             alt="imagen-atenas">
                         <div class="info italia-info">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
