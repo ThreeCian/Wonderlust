@@ -42,8 +42,6 @@
     }
 
     .dropdown {
-        /* text-align: center; */
-        /* margin: 1em; */
         margin-bottom: 1em;
     }
 
@@ -62,27 +60,18 @@
         font-size: 45px;
     }
 
-    .icon-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+    
 
     .cotiza-cont-desktop {
         display: block;
-        /* position: absolute; */
         text-align: end;
         margin-right: 1em;
-        /* bottom: 80px;
-    right: 160px; */
-
     }
 
     .cotiza-desktop {
         background-color: #132F57;
         color: white;
-        font-weight: bold;
+        
         border: none;
         border-radius: .5em;
 
@@ -108,6 +97,14 @@
         padding: 0;
     }
 
+    .icon-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1em;
+    }
+
     .icon-info {
         /*Atributos agregados*/
         display: flex;
@@ -122,6 +119,7 @@
     }
 
     .icon-text {
+        margin-top: .5em;
         padding: 0 1em;
         display: flex;
         flex-direction: column;
@@ -129,14 +127,10 @@
     }
 
     .icon-cont-item {
-        margin-top: 1em;
+        margin-top: .5em;
         margin-bottom: .5em;
         font-size: 45px;
     }
-
-    /* .icon-text-item {
-        margin: 3.3em 0;
-    } */
 
     .icon {
         margin: 1.2em 0;
@@ -146,3 +140,22 @@
         margin: 4.4em 1em;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .icon-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon-text {
+        margin-top: .8em;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+} 
