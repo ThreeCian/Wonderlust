@@ -26,6 +26,18 @@ header {
 
 }
 
+.container .colub .btn {
+
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    background: #00122C;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
 #pral2 {
     margin-top: 25px;
     background-image: url(../images/programs/Estudio.jpg);
@@ -44,4 +56,106 @@ h1 {
 
 h2 {
     display: none;
+}
+
+.none {
+    display: none;
+}
+
+.none-1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card {
+    width: 290px;
+    height: 540px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(20px);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 1.5);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5) rgb(0, 18, 44));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.card .info {
+
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #00122C;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 1.5);
 }
