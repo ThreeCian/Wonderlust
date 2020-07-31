@@ -86,27 +86,3 @@ Body {
     background-color: var(--color-secondary);
 
 }
-
-.main-information {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #fff;
-    height: auto;
-    line-height: 35px;
-    color: #757575;
-    font-family: ;
-    font-size: 13.5px;
-    cursor: pointer;
-}
-
-.titulo-link {
-    font-size: 18px;
-    font-weight: 800;
-    color: #191919;
-}
-
-
-.link:hover {
-    color: var(--color-primary);
-}

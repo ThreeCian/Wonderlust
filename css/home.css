@@ -16,8 +16,12 @@ body {
 }
 
 /*---Navbar---*/
-nav {
+.nav-color {
     background-color: transparent;
+}
+
+.nav-cambio {
+    background-color: #00122C;
 }
 
 .logo-style {
@@ -116,4 +120,47 @@ nav {
     background-color: #00122C;
     color: white;
     transform: rotateY(180deg);
+}
+
+.main-information {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: auto;
+    line-height: 35px;
+    color: #757575;
+    font-family: ;
+    font-size: 13.5px;
+    cursor: pointer;
+}
+
+.titulo-link {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--color-azul);
+}
+
+
+.link:hover {
+    color: var(--color-azul);
+}
+
+/*Whatsapp*/
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
 }
