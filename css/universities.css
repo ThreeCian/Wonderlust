@@ -26,18 +26,6 @@ header {
 
 }
 
-.container .colub .btn {
-
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    background: #00122C;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-
 #pral2 {
     margin-top: 25px;
     background-image: url(../images/programs/Estudio.jpg);
@@ -158,18 +146,4 @@ h2 {
 
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 1.5);
-}
-
-.Last {
-    padding: 2rem;
-}
-
-.background {
-    touch-action: none;
-}
-
-.footer {
-    background-color: var(--color-primary);
-    height: 90px;
-    color: var(--text-light)
 }
