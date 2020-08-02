@@ -159,3 +159,9 @@ h2 {
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 1.5);
 }
+
+.footer {
+    background-color: var(--color-primary);
+    height: 90px;
+    color: var(--text-light)
+}
