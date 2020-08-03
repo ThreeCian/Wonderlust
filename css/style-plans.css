@@ -33,7 +33,7 @@
 
 #nav-dropdown {
     background-color: var(--color-secondary);
-    top: 110%;
+    top: 100%;
 }
 
 .dropdown-item {
