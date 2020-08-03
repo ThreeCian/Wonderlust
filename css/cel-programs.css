@@ -61,6 +61,7 @@
     }
 
     .DOS {
+        padding: 4rem;
         display: flex;
         margin: 0em;
     }
@@ -107,5 +108,9 @@
 
     .btn {
         display: none;
+    }
+
+    .Last {
+        padding: 2rem;
     }
 }

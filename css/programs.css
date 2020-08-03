@@ -13,8 +13,6 @@
     src: url(../fonts/Lateef/Lateef-Regular.ttf);
 }
 
-
-
 :root {
     --color-primary: #00122C;
     --color-secondary: #132F57;
@@ -24,15 +22,6 @@
     --font-tittle: 'GreatVibes';
 }
 
-.navbar-nav {
-    padding: 0 0;
-}
-
-#navbarMenu {
-    padding-left: 0rem;
-    padding-right: 0rem;
-
-}
 
 
 .navbar {
@@ -43,7 +32,6 @@
     font-family: var(--font-tittle);
     color: var(--text-light);
 }
-
 
 body {
     width: 100%;
@@ -104,9 +92,9 @@ header {
     text-align: start;
 }
 
-h1 {}
 
-h2 {
+
+.DOS {
     display: none;
 }
 
@@ -224,7 +212,9 @@ h2 {
 .footer {
     background-color: var(--color-primary);
     height: 90px;
-    color: var(--text-light)
+    color: var(--text-light);
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
 }
 
 .inicio {
