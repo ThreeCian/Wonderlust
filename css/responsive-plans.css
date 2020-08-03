@@ -27,7 +27,8 @@
         border-radius: 1em;
     }
 
-    .nav-link {
+    /*----- cambiar nombres de clases ----- */
+    .body-nav-link {
         /*Atributos agregados*/
         background-color: #132F57;
         color: white;
@@ -41,11 +42,11 @@
         background-color: #132F57;
     }
 
-    .dropdown {
+    .body-dropdown {
         margin-bottom: 1em;
     }
 
-    .dropdown-menu {
+    .body-dropdown-menu {
         text-align: center;
         background-color: #132F57;
     }
@@ -53,6 +54,8 @@
     .dropdown-item {
         color: white;
     }
+
+    /* -------------------- */
 
     .icon {
         color: #00122C;
@@ -142,6 +145,21 @@
 }
 
 @media only screen and (min-width: 992px) {
+    #navbar-lista {
+        width: 85%;
+    }
+
+    #nav-dropdown {
+        background-color: var(--color-secondary);
+        top: 110%;
+    }
+
+    #btn-log-in {
+        width: 8em;
+        margin-left: 1em;
+    }
+
+
     .icon-section {
         display: flex;
         flex-direction: column;

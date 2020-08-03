@@ -16,7 +16,46 @@
 
 <body>
 
-    <div class="nav-a container-fluid"></div>
+    <!-- <div class="nav-a container-fluid"></div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-container">
+        <a class="navbar-brand" id="navbar-titulo" href="#">Wanderlust</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="navbar-lista">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Planes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav-dropdown">
+                        <a class="dropdown-item" href="../plans/africa.html">África</a>
+                        <a class="dropdown-item" href="../plans/asia.html">Asia</a>
+                        <a class="dropdown-item" href="../plans/europa.html">Europa</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn my-2 my-sm-0" type="submit" id="btn-log-in">Inicia Sesión</button>
+            </form>
+        </div>
+    </nav>
+
 
     <div class="bg-europa container-fluid"></div>
 
@@ -36,13 +75,14 @@
 
                         <div class="dropdown-cont">
 
-                            <div class="dropdown">
+                            <div class="dropdown body-dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button"
                                     id="dropdownContinenteMobileButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     Continente
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownContinenteMobileButton">
+                                <div class="dropdown-menu body-dropdown-menu"
+                                    aria-labelledby="dropdownContinenteMobileButton">
                                     <a class="dropdown-item" href="africa.html">Africa</a>
                                     <a class="dropdown-item" href="asia.html">Asia</a>
                                     <a class="dropdown-item" href="europa.html">Europa</a>
@@ -50,33 +90,33 @@
                             </div>
 
 
-                            <div class="dropdown">
+                            <div class="dropdown body-dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button"
                                     id="dropdownEuropaButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     Europa
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownEuropaButton">
+                                <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownEuropaButton">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist"
                                         aria-orientation="vertical">
 
-                                        <a class="nav-link active" id="v-pills-reino-unido-tab" data-toggle="pill"
-                                            href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
-                                            aria-selected="true">Reino Unido</a>
+                                        <a class="nav-link active body-nav-link" id="v-pills-reino-unido-tab"
+                                            data-toggle="pill" href="#v-pills-reino-unido" role="tab"
+                                            aria-controls="v-pills-reino-unido" aria-selected="true">Reino Unido</a>
 
-                                        <a class="nav-link" id="v-pills-italia-tab" data-toggle="pill"
+                                        <a class="nav-link body-nav-link" id="v-pills-italia-tab" data-toggle="pill"
                                             href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
                                             aria-selected="false">Italia</a>
 
-                                        <a class="nav-link" id="v-pills-alemania-tab" data-toggle="pill"
+                                        <a class="nav-link body-nav-link" id="v-pills-alemania-tab" data-toggle="pill"
                                             href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
                                             aria-selected="false">Alemania</a>
 
-                                        <a class="nav-link" id="v-pills-francia-tab" data-toggle="pill"
+                                        <a class="nav-link body-nav-link" id="v-pills-francia-tab" data-toggle="pill"
                                             href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
                                             aria-selected="false">Francia</a>
 
-                                        <a class="nav-link" id="v-pills-grecia-tab" data-toggle="pill"
+                                        <a class="nav-link body-nav-link" id="v-pills-grecia-tab" data-toggle="pill"
                                             href="#v-pills-grecia" role="tab" aria-controls="v-pills-grecia"
                                             aria-selected="false">Grecia</a>
 
@@ -96,29 +136,32 @@
                 <div class="nav flex-column nav-pills" id="v-pills-tab-desktop" role="tablist"
                     aria-orientation="vertical">
 
-                    <div class="dropdown">
+                    <div class="dropdown body-dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button"
                             id="dropdownContinenteDesktopButton" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             Continente
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
+                        <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
                             <a class="dropdown-item" href="africa.html">Africa</a>
                             <a class="dropdown-item" href="asia.html">Asia</a>
                             <a class="dropdown-item" href="europa.html">Europa</a>
                         </div>
                     </div>
 
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-reino-unido"
-                        role="tab" aria-controls="v-pills-reino-unido" aria-selected="true">Reino Unido</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia" role="tab"
-                        aria-controls="v-pills-italia" aria-selected="false">Italia</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-alemania" role="tab"
-                        aria-controls="v-pills-alemania" aria-selected="false">Alemania</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-francia" role="tab"
-                        aria-controls="v-pills-francia" aria-selected="false">Francia</a>
-                    <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-grecia" role="tab"
-                        aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
+                    <a class="nav-link active body-nav-link" id="v-pills-home-tab" data-toggle="pill"
+                        href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
+                        aria-selected="true">Reino Unido</a>
+                    <a class="nav-link body-nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia"
+                        role="tab" aria-controls="v-pills-italia" aria-selected="false">Italia</a>
+                    <a class="nav-link body-nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                        href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
+                        aria-selected="false">Alemania</a>
+                    <a class="nav-link body-nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                        href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
+                        aria-selected="false">Francia</a>
+                    <a class="nav-link body-nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-grecia"
+                        role="tab" aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
                 </div>
 
             </div>
