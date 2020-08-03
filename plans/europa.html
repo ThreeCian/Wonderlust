@@ -16,359 +16,531 @@
 
 <body>
 
-    <div class="nav-a container-fluid"></div>
+    <!-- <div class="nav-a container-fluid"></div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-container">
+        <a class="navbar-brand" id="navbar-titulo" href="#">Wanderlust</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="navbar-lista">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Planes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav-dropdown">
+                        <a class="dropdown-item" href="../plans/africa.html">África</a>
+                        <a class="dropdown-item" href="../plans/asia.html">Asia</a>
+                        <a class="dropdown-item" href="../plans/europa.html">Europa</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn my-2 my-sm-0" type="submit" id="btn-log-in">Inicia Sesión</button>
+            </form>
+        </div>
+    </nav>
+
 
     <div class="bg-europa container-fluid"></div>
 
-    <div class="aa container-md pill-container">
+    <main>
+        <div class="aa container-md pill-container">
 
-        <div class="menu-mobile">
+            <div class="menu-mobile">
 
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Busca tu destino
-                <i class="sort-down fas fa-sort-down"></i>
-            </button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Busca tu destino
+                    <i class="sort-down fas fa-sort-down"></i>
+                </button>
 
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
 
-                    <div class="dropdown-cont">
+                        <div class="dropdown-cont">
 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button"
-                                id="dropdownContinenteMobileButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Continente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownContinenteMobileButton">
-                                <a class="dropdown-item" href="africa.html">Africa</a>
-                                <a class="dropdown-item" href="asia.html">Asia</a>
-                                <a class="dropdown-item" href="europa.html">Europa</a>
-                            </div>
-                        </div>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEuropaButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Europa
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownEuropaButton">
-                                <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist"
-                                    aria-orientation="vertical">
-
-                                    <a class="nav-link active" id="v-pills-reino-unido-tab" data-toggle="pill"
-                                        href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
-                                        aria-selected="true">Reino Unido</a>
-
-                                    <a class="nav-link" id="v-pills-italia-tab" data-toggle="pill"
-                                        href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
-                                        aria-selected="false">Italia</a>
-
-                                    <a class="nav-link" id="v-pills-alemania-tab" data-toggle="pill"
-                                        href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
-                                        aria-selected="false">Alemania</a>
-
-                                    <a class="nav-link" id="v-pills-francia-tab" data-toggle="pill"
-                                        href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
-                                        aria-selected="false">Francia</a>
-
-                                    <a class="nav-link" id="v-pills-grecia-tab" data-toggle="pill"
-                                        href="#v-pills-grecia" role="tab" aria-controls="v-pills-grecia"
-                                        aria-selected="false">Grecia</a>
-
+                            <div class="dropdown body-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="dropdownContinenteMobileButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Continente
+                                </button>
+                                <div class="dropdown-menu body-dropdown-menu"
+                                    aria-labelledby="dropdownContinenteMobileButton">
+                                    <a class="dropdown-item" href="africa.html">Africa</a>
+                                    <a class="dropdown-item" href="asia.html">Asia</a>
+                                    <a class="dropdown-item" href="europa.html">Europa</a>
                                 </div>
                             </div>
+
+
+                            <div class="dropdown body-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="dropdownEuropaButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Europa
+                                </button>
+                                <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownEuropaButton">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist"
+                                        aria-orientation="vertical">
+
+                                        <a class="nav-link active body-nav-link" id="v-pills-reino-unido-tab"
+                                            data-toggle="pill" href="#v-pills-reino-unido" role="tab"
+                                            aria-controls="v-pills-reino-unido" aria-selected="true">Reino Unido</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-italia-tab" data-toggle="pill"
+                                            href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
+                                            aria-selected="false">Italia</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-alemania-tab" data-toggle="pill"
+                                            href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
+                                            aria-selected="false">Alemania</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-francia-tab" data-toggle="pill"
+                                            href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
+                                            aria-selected="false">Francia</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-grecia-tab" data-toggle="pill"
+                                            href="#v-pills-grecia" role="tab" aria-controls="v-pills-grecia"
+                                            aria-selected="false">Grecia</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-desktop">
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab-desktop" role="tablist"
+                    aria-orientation="vertical">
+
+                    <div class="dropdown body-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                            id="dropdownContinenteDesktopButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Continente
+                        </button>
+                        <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
+                            <a class="dropdown-item" href="africa.html">Africa</a>
+                            <a class="dropdown-item" href="asia.html">Asia</a>
+                            <a class="dropdown-item" href="europa.html">Europa</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link active body-nav-link" id="v-pills-home-tab" data-toggle="pill"
+                        href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
+                        aria-selected="true">Reino Unido</a>
+                    <a class="nav-link body-nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia"
+                        role="tab" aria-controls="v-pills-italia" aria-selected="false">Italia</a>
+                    <a class="nav-link body-nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                        href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
+                        aria-selected="false">Alemania</a>
+                    <a class="nav-link body-nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                        href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
+                        aria-selected="false">Francia</a>
+                    <a class="nav-link body-nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-grecia"
+                        role="tab" aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="v-pills-reino-unido" role="tabpanel"
+                    aria-labelledby="v-pills-reino-unido-tab">
+
+                    <div class="country-container">
+
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Reino Unido</h1>
+                            </div>
+                            <img class="imagen" src="../images/images-plans/london-eva-dang-EXdXLrZXS9Q-unsplash.jpg"
+                                alt="imagen-londres">
+                            <div class="info uk-info">
+                                <p>El Reino Unido se encuentra ubicado al noroeste de la Europa Continental. Su
+                                    territorio está formado geográficamente por la isla de Gran Bretaña, el noreste de
+                                    la isla de Irlanda y pequeñas
+                                    islas adyacentes. Se encuentra comprendido por cuatro naciones constitutivas:
+                                    Escocia, Gales, Inglaterra e Irlanda del Norte. El Reino Unido tiene catorce
+                                    territorios de ultramar, todos ellos vestigios de lo que fue el Imperio británico.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Londres</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Libra</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Inglés</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+
                         </div>
 
                     </div>
 
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
                 </div>
+
+                <div class="tab-pane fade" id="v-pills-italia" role="tabpanel" aria-labelledby="v-pills-italia-tab">
+
+                    <div class="country-container">
+
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Italia</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/roma-cristina-gottardi-I1Lv2yX67GI-unsplash.jpg"
+                                alt="imagen-londres">
+                            <div class="info uk-info">
+                                <p>Italia se ubica en el centro del mar Mediterráneo, en Europa Meridional. Ocupa la
+                                    península itálica, así como la llanura
+                                    Padana, la islas de Sicilia y Cerdeña. En el norte, está rodeada por los Alpes y
+                                    tiene frontera con Francia, Suiza, Austria, y Eslovenia. Ha sido el hogar de muchas
+                                    culturas europeas como la civilización nurágica, los etruscos, los griegos, los
+                                    romanos y
+                                    también fue la cuna del Humanismo y del Renacimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Roma</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Italiano</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-alemania" role="tabpanel" aria-labelledby="v-pills-alemania-tab">
+
+                    <div class="country-container">
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Alemania</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/berlin-claudio-schwarz-purzlbaum-TScGhJM716g-unsplash.jpg"
+                                alt="imagen-berlin">
+                            <div class="info italia-info">
+                                <p>Alemania es el segundo destino de las migraciones más popular en el mundo. El país ha
+                                    desarrollado un alto nivel de vida y establecido un sistema completo de seguridad
+                                    social. Es reconocida como líder en los sectores científico y tecnológico. En
+                                    Alemania se han desarrollado algunos de los más renombrados compositores de la
+                                    Música clásica europea, con inclusión
+                                    de Johann Sebastian Bach, Georg Friedrich Händel y Ludwig van Beethoven.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Berlín</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Alemán</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-francia" role="tabpanel" aria-labelledby="v-pills-francia-tab">
+
+                    <div class="country-container">
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Francia</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/paris-alexander-kagan-t9Td0zfDTwI-unsplash.jpg"
+                                alt="imagen-paris">
+                            <div class="info italia-info">
+                                <p>Francia se ubica en Europa Occidental. Su territorio insular europeo comprende la
+                                    isla de Córcega, en el Mediterráneo occidental, y diversos archipiélagos
+                                    costeros en el océano Atlántico. En América, es territorio de Francia la Guayana
+                                    Francesa, que limita con Brasil. ​, y las islas y archipiélagos de Martinica,
+                                    Guadalupe, San Bartolomé, y San Pedro y Miquelón.</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>París</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Francés</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-grecia" role="tabpanel" aria-labelledby="v-pills-grecia-tab">
+
+                    <div class="country-container">
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Grecia</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/grecia-d-f-y-b-travel-captures-4FzjlYVk7fg-unsplash.jpg"
+                                alt="imagen-atenas">
+                            <div class="info italia-info">
+                                <p>Grecia está estratégicamente ubicada entre Europa, Asia y África, y comparte
+                                    fronteras terrestres al noroeste con Albania, al
+                                    norte con Macedonia del Norte y Bulgaria, y al noreste con Turquía. El territorio
+                                    griego está conformado por siete archipiélagos con unas 1400 islas, de las que 227
+                                    están habitadas. Cerca de un 80 % de su relieve consta de montañas, de las cuales la
+                                    más alta es el monte Olimpo.</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Atenas</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Griego</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
+    </main>
 
-        <div class="menu-desktop">
+    <footer class="footer container-fluid">
+        <div class="d-flex justify-content-center container-fluid">
 
-            <div class="nav flex-column nav-pills" id="v-pills-tab-desktop" role="tablist" aria-orientation="vertical">
+            <a class="m-2" href="#"><i class=" icon-social fab fa-facebook-square"></i></a>
 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownContinenteDesktopButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Continente
+            <a class="m-2" href="#"><i class=" icon-social fab fa-twitter-square"></i></a>
+
+            <a class="m-2" href="#"><i class="  icon-social fab fa-youtube"></i></a>
+
+            <a class="m-2" href="#"><i class=" icon-social fab fa-instagram"></i></a>
+
+
+        </div>
+        <p>Copytight 2020 - Wonderlast</p>
+    </footer>
+
+    <!-- <div class="footer-alt container-fluid"></div> -->
+
+    <!--Inicio de sesion-->
+    <div class="modal fade" id="session" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header inicio text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Inicie sesión
+                    </h5>
+
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
-                        <a class="dropdown-item" href="africa.html">Africa</a>
-                        <a class="dropdown-item" href="asia.html">Asia</a>
-                        <a class="dropdown-item" href="europa.html">Europa</a>
-                    </div>
                 </div>
+                <div class="modal-body">
+                    <form id="inicios" action="./home.html" method="POST">
+                        <div class="form-group">
+                            <label for="e-mail" class="col-form-label">Usuario </label>
+                            <input type="email" class="form-control" id="e-mail" required
+                                placeholder="Ingrese su correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <a href="">Olvidé mi contraseña</a>
 
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-reino-unido"
-                    role="tab" aria-controls="v-pills-reino-unido" aria-selected="true">Reino Unido</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia" role="tab"
-                    aria-controls="v-pills-italia" aria-selected="false">Italia</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-alemania" role="tab"
-                    aria-controls="v-pills-alemania" aria-selected="false">Alemania</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-francia" role="tab"
-                    aria-controls="v-pills-francia" aria-selected="false">Francia</a>
-                <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-grecia" role="tab"
-                    aria-controls="v-pills-grecia" aria-selected="false">Grecia</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button form="inicios" type="submit" class="btn btn-secondary">
+                        Inciar sesión
+                    </button>
+                    <button type="button" class="btn inicio text-light" data-toggle="modal" data-dismiss="modal"
+                        data-target="#registrer">
+                        registrarse
+
+                    </button>
+                </div>
             </div>
-
         </div>
-
-        <div class="tab-content" id="v-pills-tabContent">
-
-            <div class="tab-pane fade show active" id="v-pills-reino-unido" role="tabpanel"
-                aria-labelledby="v-pills-reino-unido-tab">
-
-                <div class="country-container">
-
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Reino Unido</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/london-eva-dang-EXdXLrZXS9Q-unsplash.jpg"
-                            alt="imagen-londres">
-                        <div class="info uk-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas necessitatibus
-                                quas sed debitis mnis. Sapiente, molestiae. Excepturi molestiae repellat cupiditate
-                                dicta
-                                minima in
-                                nesciunt? A vitae
-                                eligendi vero dignissimos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Londres</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Libra</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Inglés</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-italia" role="tabpanel" aria-labelledby="v-pills-italia-tab">
-
-                <div class="country-container">
-
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Italia</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/roma-cristina-gottardi-I1Lv2yX67GI-unsplash.jpg"
-                            alt="imagen-londres">
-                        <div class="info uk-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas necessitatibus
-                                quas sed debitis mnis. Sapiente, molestiae. Excepturi molestiae repellat cupiditate
-                                dicta
-                                minima in
-                                nesciunt? A vitae
-                                eligendi vero dignissimos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Roma</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Italiano</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-alemania" role="tabpanel" aria-labelledby="v-pills-alemania-tab">
-
-                <div class="country-container">
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Alemania</h1>
-                        </div>
-                        <img class="imagen"
-                            src="../images/images-plans/berlin-claudio-schwarz-purzlbaum-TScGhJM716g-unsplash.jpg"
-                            alt="imagen-berlin">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Berlín</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Alemán</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-francia" role="tabpanel" aria-labelledby="v-pills-francia-tab">
-
-                <div class="country-container">
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Francia</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/paris-alexander-kagan-t9Td0zfDTwI-unsplash.jpg"
-                            alt="imagen-paris">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>París</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Francés</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-grecia" role="tabpanel" aria-labelledby="v-pills-grecia-tab">
-
-                <div class="country-container">
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Grecia</h1>
-                        </div>
-                        <img class="imagen"
-                            src="../images/images-plans/grecia-d-f-y-b-travel-captures-4FzjlYVk7fg-unsplash.jpg"
-                            alt="imagen-atenas">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Atenas</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Euro</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Griego</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
+    <!--Registro-->
+    <div class="modal fade" id="registrer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header inicio text-light">
+                    <h5 class="modal-title" id="exampleModalLabel1">
+                        Inicie sesión
+                    </h5>
 
-    <div class="footer container-fluid"></div>
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="./home.html" method="POST">
+                        <div class="form-group">
+                            <label for="Nombre" class="col-form-label">Nombre </label>
+                            <input type="Text" class="form-control" id="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Apellido" class="col-form-label">Apellido </label>
+                            <input type="Text" class="form-control" id="Apellido" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo" class="col-form-label">Correo </label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseña" class="col-form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" required
+                                pattern="[A-Za-z0-9]{5,12" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseña" class="col-form-label">Repita la contraseña</label>
+                            <input type="password" class="form-control" id="contraseña2" name="contraseña" required
+                                pattern="[A-Za-z0-9]{5,12}" required>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Terminos" name="Terminos">
+                            <span>Acepto<a href=""> los términos y condiciones </a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

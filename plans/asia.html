@@ -16,306 +16,375 @@
 
 <body>
 
-    <div class="nav-a container-fluid"></div>
+    <!-- <div class="nav-a container-fluid"></div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-container">
+        <a class="navbar-brand" id="navbar-titulo" href="#">Wanderlust</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="navbar-lista">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Planes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav-dropdown">
+                        <a class="dropdown-item" href="../plans/africa.html">África</a>
+                        <a class="dropdown-item" href="../plans/asia.html">Asia</a>
+                        <a class="dropdown-item" href="../plans/europa.html">Europa</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn my-2 my-sm-0" type="submit" id="btn-log-in">Inicia Sesión</button>
+            </form>
+        </div>
+    </nav>
 
     <div class="bg-asia container-fluid"></div>
 
-    <div class="aa container-md pill-container">
+    <main>
+        <div class="aa container-md pill-container">
 
-        <div class="menu-mobile">
+            <div class="menu-mobile">
 
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Busca tu destino
-                <i class="sort-down fas fa-sort-down"></i>
-            </button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Busca tu destino
+                    <i class="sort-down fas fa-sort-down"></i>
+                </button>
 
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
 
-                    <div class="dropdown-cont">
+                        <div class="dropdown-cont">
 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button"
-                                id="dropdownContinenteMobileButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Continente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownContinenteMobileButton">
-                                <a class="dropdown-item" href="africa.html">Africa</a>
-                                <a class="dropdown-item" href="asia.html">Asia</a>
-                                <a class="dropdown-item" href="europa.html">Europa</a>
-                            </div>
-                        </div>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEuropaButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Asia
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownEuropaButton">
-                                <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist"
-                                    aria-orientation="vertical">
-
-                                    <a class="nav-link active" id="v-pills-reino-unido-tab" data-toggle="pill"
-                                        href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
-                                        aria-selected="true">China</a>
-
-                                    <a class="nav-link" id="v-pills-italia-tab" data-toggle="pill"
-                                        href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
-                                        aria-selected="false">India</a>
-
-                                    <a class="nav-link" id="v-pills-alemania-tab" data-toggle="pill"
-                                        href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
-                                        aria-selected="false">Corea del Sur</a>
-
-                                    <a class="nav-link" id="v-pills-francia-tab" data-toggle="pill"
-                                        href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
-                                        aria-selected="false">Japón</a>
-
+                            <div class="dropdown body-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="dropdownContinenteMobileButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Continente
+                                </button>
+                                <div class="dropdown-menu body-dropdown-menu"
+                                    aria-labelledby="dropdownContinenteMobileButton">
+                                    <a class="dropdown-item" href="africa.html">Africa</a>
+                                    <a class="dropdown-item" href="asia.html">Asia</a>
+                                    <a class="dropdown-item" href="europa.html">Europa</a>
                                 </div>
                             </div>
+
+
+                            <div class="dropdown body-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="dropdownEuropaButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Asia
+                                </button>
+                                <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownEuropaButton">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist"
+                                        aria-orientation="vertical">
+
+                                        <a class="nav-link active body-nav-link" id="v-pills-reino-unido-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-reino-unido" role="tab" aria-controls="v-pills-reino-unido"
+                                            aria-selected="true">China</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-italia-tab" data-toggle="pill"
+                                            href="#v-pills-italia" role="tab" aria-controls="v-pills-italia"
+                                            aria-selected="false">India</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-alemania-tab" data-toggle="pill"
+                                            href="#v-pills-alemania" role="tab" aria-controls="v-pills-alemania"
+                                            aria-selected="false">Corea del Sur</a>
+
+                                        <a class="nav-link body-nav-link" id="v-pills-francia-tab" data-toggle="pill"
+                                            href="#v-pills-francia" role="tab" aria-controls="v-pills-francia"
+                                            aria-selected="false">Japón</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-desktop">
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab-desktop" role="tablist"
+                    aria-orientation="vertical">
+
+                    <div class="dropdown body-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                            id="dropdownContinenteDesktopButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Continente
+                        </button>
+                        <div class="dropdown-menu body-dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
+                            <a class="dropdown-item" href="africa.html">Africa</a>
+                            <a class="dropdown-item" href="asia.html">Asia</a>
+                            <a class="dropdown-item" href="europa.html">Europa</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link active body-nav-link" id="v-pills-home-tab" data-toggle="pill"
+                        href="#v-pills-reino-unido"
+                        role="tab" aria-controls="v-pills-reino-unido" aria-selected="true">China</a>
+                    <a class="nav-link body-nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia"
+                        role="tab"
+                        aria-controls="v-pills-italia" aria-selected="false">India</a>
+                    <a class="nav-link body-nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                        href="#v-pills-alemania" role="tab"
+                        aria-controls="v-pills-alemania" aria-selected="false">Corea del Sur</a>
+                    <a class="nav-link body-nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                        href="#v-pills-francia" role="tab"
+                        aria-controls="v-pills-francia" aria-selected="false">Japón</a>
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="v-pills-reino-unido" role="tabpanel"
+                    aria-labelledby="v-pills-reino-unido-tab">
+
+                    <div class="country-container">
+
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">China</h1>
+                            </div>
+                            <img class="imagen" src="../images/images-plans/china-md-hanson-lu-_8EFj6ISA08-unsplash.jpg"
+                                alt="imagen-china">
+                            <div class="info uk-info">
+                                <p>China es un país soberano situado en Asia Oriental. Es el segundo más poblado del
+                                    mundo por detrás de la India. Es el tercer país más extenso del planeta por
+                                    superficie terrestre detrás de Rusia y Canadá. Las cordilleras montañosas del
+                                    Himalaya, el Karakórum, Pamir y Tian Shan la separan del sur y el centro de Asia. La
+                                    civilización china, una de las más antiguas del mundo. China es considerada por
+                                    numerosos analistas como una superpotencia emergente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Pekín</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Yuan</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Chino Mandarín</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+
                         </div>
 
                     </div>
 
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
                 </div>
+
+                <div class="tab-pane fade" id="v-pills-italia" role="tabpanel" aria-labelledby="v-pills-italia-tab">
+
+                    <div class="country-container">
+
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">India</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/nuevaDelhi-md-jan-gemerle-XbRp9KUrI-Q-unsplash.jpg"
+                                alt="imagen-nueva-delhi">
+                            <div class="info uk-info">
+                                <p>India es un país soberano ubicado en el sur del Continente Asiático. Con sus más de
+                                    1409 millones de habitantes, es el segundo país del mundo por población. Hogar de la
+                                    cultura del valle del Indo y una región histórica por sus rutas comerciales y
+                                    grandes imperios, el subcontinente indio fue identificado por su riqueza cultural y
+                                    comercial en la mayor parte de su larga historia.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Nueva Delhi</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Rupia India</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Hindi</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-alemania" role="tabpanel" aria-labelledby="v-pills-alemania-tab">
+
+                    <div class="country-container">
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Corea del Sur</h1>
+                            </div>
+                            <img class="imagen" src="../images/images-plans/seul-md-yeo-khee--e6Xu27_T50-unsplash.jpg"
+                                alt="imagen-seul">
+                            <div class="info italia-info">
+                                <p>Corea del Sur es un país soberano de Asia Oriental, ubicado en la parte sur de la
+                                    península de Corea. Aproximadamente la mitad de la población del país vive en su
+                                    capital, Seúl, o en su zona metropolitana, que es una de las áreas metropolitanas
+                                    más pobladas del mundo. A través del tiempo, la historia de Corea ha sido turbulenta
+                                    con numerosas guerras, incluyendo invasiones tanto de China como de Japón. </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Seúl</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Won Surcoreano</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Coreano</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-francia" role="tabpanel" aria-labelledby="v-pills-francia-tab">
+
+                    <div class="country-container">
+                        <div class="image-info-cont">
+                            <div class="title">
+                                <h1 class="display-6">Japón</h1>
+                            </div>
+                            <img class="imagen"
+                                src="../images/images-plans/tokyo-md-louie-martinez-IocJwyqRv3M-unsplash.jpg"
+                                alt="imagen-tokyo">
+                            <div class="info italia-info">
+                                <p>Japón es un país soberano insular del este de Asia, situado en el océano Pacífico. os
+                                    caracteres que componen el nombre de Japón pueden significar «el origen del sol» o
+                                    «la base del sol», motivo por el que el país también es conocido como la Tierra del
+                                    Sol Naciente, ya que desde la perspectiva de China, el sol sale desde Japón. El Área
+                                    del Gran Tokio en la isla de Honshū, donde está la ciudad de Tokio, es la mayor área
+                                    metropolitana del mundo, con más de treinta millones de residentes.</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-section">
+                            <div class="icon-info">
+                                <div class="icon-cont">
+
+                                    <div class="icon-cont-item"><i class="fas fa-city"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
+                                    <div class="icon-cont-item"><i class="fas fa-language"></i></div>
+
+                                </div>
+                                <div class="icon-text">
+                                    <p class="icon-text-item"><b>Capital</b><br>Tokyo</p>
+                                    <p class="icon-text-item"><b>Moneda</b><br>Yen Japonés</p>
+                                    <p class="icon-text-item"><b>Idioma</b><br>Japonés</p>
+                                </div>
+                            </div>
+
+                            <div class="cotiza-cont-desktop">
+                                <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cotiza-cont-mobile">
+                        <button class="cotiza">Cotiza Aquí!</button>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
+    </main>
 
-        <div class="menu-desktop">
+    <footer class="footer container-fluid">
+        <div class="d-flex justify-content-center container-fluid">
 
-            <div class="nav flex-column nav-pills" id="v-pills-tab-desktop" role="tablist" aria-orientation="vertical">
+            <a class="m-2" href="#"><i class=" icon-social fab fa-facebook-square"></i></a>
 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownContinenteDesktopButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Continente
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownContinenteDesktopButton">
-                        <a class="dropdown-item" href="africa.html">Africa</a>
-                        <a class="dropdown-item" href="asia.html">Asia</a>
-                        <a class="dropdown-item" href="europa.html">Europa</a>
-                    </div>
-                </div>
+            <a class="m-2" href="#"><i class=" icon-social fab fa-twitter-square"></i></a>
 
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-reino-unido"
-                    role="tab" aria-controls="v-pills-reino-unido" aria-selected="true">China</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-italia" role="tab"
-                    aria-controls="v-pills-italia" aria-selected="false">India</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-alemania" role="tab"
-                    aria-controls="v-pills-alemania" aria-selected="false">Corea del Sur</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-francia" role="tab"
-                    aria-controls="v-pills-francia" aria-selected="false">Japón</a>
-            </div>
+            <a class="m-2" href="#"><i class="  icon-social fab fa-youtube"></i></a>
+
+            <a class="m-2" href="#"><i class=" icon-social fab fa-instagram"></i></a>
+
 
         </div>
+        <p>Copytight 2020 - Wonderlast</p>
+    </footer>
 
-        <div class="tab-content" id="v-pills-tabContent">
-
-            <div class="tab-pane fade show active" id="v-pills-reino-unido" role="tabpanel"
-                aria-labelledby="v-pills-reino-unido-tab">
-
-                <div class="country-container">
-
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">China</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/china-md-hanson-lu-_8EFj6ISA08-unsplash.jpg"
-                            alt="imagen-china">
-                        <div class="info uk-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas necessitatibus
-                                quas sed debitis mnis. Sapiente, molestiae. Excepturi molestiae repellat cupiditate
-                                dicta
-                                minima in
-                                nesciunt? A vitae
-                                eligendi vero dignissimos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Pekín</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Yuan</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Chino Mandarín</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-italia" role="tabpanel" aria-labelledby="v-pills-italia-tab">
-
-                <div class="country-container">
-
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">India</h1>
-                        </div>
-                        <img class="imagen"
-                            src="../images/images-plans/nuevaDelhi-md-jan-gemerle-XbRp9KUrI-Q-unsplash.jpg"
-                            alt="imagen-nueva-delhi">
-                        <div class="info uk-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas necessitatibus
-                                quas sed debitis mnis. Sapiente, molestiae. Excepturi molestiae repellat cupiditate
-                                dicta
-                                minima in
-                                nesciunt? A vitae
-                                eligendi vero dignissimos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Nueva Delhi</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Rupia India</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Hindi</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-alemania" role="tabpanel" aria-labelledby="v-pills-alemania-tab">
-
-                <div class="country-container">
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Corea del Sur</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/seul-md-yeo-khee--e6Xu27_T50-unsplash.jpg"
-                            alt="imagen-seul">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Seúl</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Won Surcoreano</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Coreano</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-francia" role="tabpanel" aria-labelledby="v-pills-francia-tab">
-
-                <div class="country-container">
-                    <div class="image-info-cont">
-                        <div class="title">
-                            <h1 class="display-6">Japón</h1>
-                        </div>
-                        <img class="imagen" src="../images/images-plans/tokyo-md-louie-martinez-IocJwyqRv3M-unsplash.jpg"
-                            alt="imagen-tokyo">
-                        <div class="info italia-info">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus itaque ab et cum
-                                accusamus velit aut sunt exercitationem, suscipit doloremque, sapiente labore, dolores
-                                minus
-                                repudiandae.</p>
-                        </div>
-                    </div>
-
-                    <div class="icon-section">
-                        <div class="icon-info">
-                            <div class="icon-cont">
-
-                                <div class="icon-cont-item"><i class="fas fa-city"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-money-bill"></i></div>
-                                <div class="icon-cont-item"><i class="fas fa-language"></i></div>
-
-                            </div>
-                            <div class="icon-text">
-                                <p class="icon-text-item"><b>Capital</b><br>Tokyo</p>
-                                <p class="icon-text-item"><b>Moneda</b><br>Yen Japonés</p>
-                                <p class="icon-text-item"><b>Idioma</b><br>Japonés</p>
-                            </div>
-                        </div>
-
-                        <div class="cotiza-cont-desktop">
-                            <button class="cotiza cotiza-desktop">Cotiza Aquí!</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cotiza-cont-mobile">
-                    <button class="cotiza">Cotiza Aquí!</button>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="footer container-fluid"></div>
+    <!-- <div class="footer container-fluid"></div> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
