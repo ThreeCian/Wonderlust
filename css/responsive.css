@@ -1,0 +1,24 @@
+@import url(./style.css);
+
+@import url(./about.css);
+
+@media screen and (min-width:0px) {}
+
+@media screen and (min-width:992px) {
+
+    .paralax {
+        width: 100%;
+        height: 450px;
+
+    }
+
+    .paralax p {
+        font-size: 10em;
+    }
+
+
+
+    .mov {
+        order: 2;
+    }
+}

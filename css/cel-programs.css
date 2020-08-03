@@ -1,0 +1,71 @@
+@media screen and (max-width: 550px) {
+
+    .pral {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url(../images/programs/portada.jpg);
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    #pral2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background-image: url(../images/programs/Estudio.jpg);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+
+    }
+
+
+    .UNO {
+        display: none;
+    }
+
+    .DOS {
+        display: flex;
+        margin: 0em;
+    }
+
+
+    p {
+        text-align: center;
+    }
+
+    .colub {
+        margin: 0vw;
+        align-items: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .fil {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .black {
+        text-align: center;
+        background-color: rgb(94, 87, 87);
+        height: 60px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+
+    }
+
+    .black a {
+        color: blanchedalmond;
+        text-decoration: none;
+    }
+
+
+}

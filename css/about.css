@@ -1,0 +1,36 @@
+.icon2 {
+    color: var(--color-secondary);
+    font-size: 3em;
+}
+
+
+.img3 {
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+
+}
+
+.sc {
+    transform: scale(1);
+    transition: transform 600ms;
+}
+
+
+.tamaño:hover .sc {
+    transform: scale(1.1);
+}
+
+.card-img-top {
+    height: 320px;
+}
+
+.paralax {
+    background-image: url(../images/about-ppal.jpg);
+    height: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: var(--text-light);
+
+}

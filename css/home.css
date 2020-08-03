@@ -1,0 +1,119 @@
+/*---VARIABLES---*/
+:root {
+    --color-azul: #00122C;
+    --text-color: #191919;
+    --color-white: #ffffff;
+
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "greatvibes";
+    src: url(../fuentes/GreatVibes-Regular.ttf)
+}
+
+/*---Navbar---*/
+nav {
+    background-color: transparent;
+}
+
+.logo-style {
+    font-family: greatvibes;
+    font-size: 30px;
+}
+
+/*---CAROUSEL---*/
+.imag-carou {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.estilo-fuente {
+    font-family: greatvibes;
+    font-size: 50px;
+}
+
+
+/*---CONTAINER CIRCULAR---*/
+.parrafo-primero {
+    margin: 1em;
+    text-align: center;
+}
+
+.row-esp {
+    margin-left: 2em;
+}
+
+.estilo-prim {
+    font-family: greatvibes;
+    font-size: 50px;
+}
+
+
+
+.container-conti {
+    margin: 5em;
+    text-align: center;
+}
+
+.imag-circular {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+/*---CONTAINER FLIP---*/
+.contenedor {
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+
+}
+
+/*anverso y reverso*/
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Giro Horizontal*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* frente y reverso */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Estilo reverso */
+.flip-card-back {
+    background-color: #00122C;
+    color: white;
+    transform: rotateY(180deg);
+}
