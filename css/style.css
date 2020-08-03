@@ -38,19 +38,11 @@ Body {
 
 }
 
-.paralax {
-    background-image: url(../images/about-ppal.jpg);
-    height: 150px;
-    background-size: cover;
-    background-attachment: fixed;
 
-    color: var(--text-light);
-
-}
 
 .navbar-nav {
-    font-family: var(--font-all);
-    font-size: 2em;
+    /*font-family: var(--font-all);*/
+    font-size: 1.3em;
 }
 
 .footer {
@@ -67,22 +59,21 @@ Body {
 
 }
 
-.icon2 {
-    color: var(--color-secondary);
-    font-size: 3em;
-}
 
-.img3 {
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.h3 {
+.color-secondary {
     color: var(--color-secondary);
 }
+
+.txt-f {
+    font-family: var(--font-tittle);
+}
+
 
 .inicio {
     background-color: var(--color-secondary);
 
+}
+
+.txt-drop {
+    color: var(--bg-color);
 }
