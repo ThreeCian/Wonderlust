@@ -33,6 +33,10 @@ body {
     background-color: var(--color-primary);
 }
 
+.dropdown-text {
+    color: white;
+}
+
 .logo-style {
     font-family: GreatVibes;
     font-size: 30px;

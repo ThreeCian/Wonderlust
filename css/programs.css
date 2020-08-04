@@ -33,6 +33,9 @@
     color: var(--text-light);
 }
 
+.nav-link {
+    font-size: 21px;
+}
 
 
 body {
@@ -48,6 +51,11 @@ body {
     color: var(--text-light);
     font-size: 1.5em;
 
+
+}
+
+#boton-inicio {
+    background-color: var(--color-secondary);
 
 }
 
