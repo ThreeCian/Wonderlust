@@ -1,7 +1,5 @@
 @import url(./style.css);
 
-@import url(./about.css);
-
 @media screen and (min-width:0px) {}
 
 @media screen and (min-width:992px) {
@@ -23,6 +21,10 @@
     .mov {
         order: 2;
     }
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> d92908c594635025346f5d9f7dac204dbbeee708
