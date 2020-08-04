@@ -1,9 +1,8 @@
 @import url(./style.css);
 
-
 @media screen and (min-width:0px) {}
 
-@media screen and (min-width:px) {
+@media screen and (min-width:992px) {
 
     .paralax {
         width: 100%;
@@ -15,8 +14,11 @@
         font-size: 10em;
     }
 
+    .paralax p {
+        font-size: 10em;
+    }
+
     .mov {
         order: 2;
     }
 }
-
