@@ -109,7 +109,6 @@
     }
 
     .icon-info {
-        /*Atributos agregados*/
         display: flex;
         align-items: flex-start;
     }
@@ -145,20 +144,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-    #navbar-lista {
-        width: 85%;
-    }
-
-    #nav-dropdown {
-        background-color: var(--color-secondary);
-        top: 110%;
-    }
-
-    #btn-log-in {
-        width: 8em;
-        margin-left: 1em;
-    }
-
 
     .icon-section {
         display: flex;
@@ -175,5 +160,14 @@
         justify-content: space-around;
     }
 
+    
 
 } 
+
+@media only screen and (min-width:1200px) {
+    
+    .mov {
+        order: 2;
+    }
+
+}
