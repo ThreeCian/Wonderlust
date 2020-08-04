@@ -210,3 +210,9 @@ button[data-toggle="collapse"] {
     color: var(--text-light);
     font-size: 1.5em;
 }
+
+#pass-icon,
+#pass-icon2,
+#pass-icon3 {
+    cursor: pointer;
+}
