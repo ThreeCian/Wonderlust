@@ -38,6 +38,10 @@ body {
     font-size: 30px;
 }
 
+.brand {
+    font-family: var(--font-tittle);
+}
+
 /*---CAROUSEL---*/
 .imag-carou {
     width: 100%;
