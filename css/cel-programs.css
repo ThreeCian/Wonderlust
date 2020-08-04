@@ -166,3 +166,9 @@
         padding: 0rem;
     }
 }
+
+#pass-icon,
+#pass-icon2,
+#pass-icon3 {
+    cursor: pointer;
+}

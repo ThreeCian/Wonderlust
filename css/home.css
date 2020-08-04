@@ -170,3 +170,8 @@ body {
     }
 
 }
+
+.inicio {
+    background-color: var(--color-secondary);
+
+}

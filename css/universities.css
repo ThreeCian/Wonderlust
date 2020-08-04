@@ -45,6 +45,22 @@
 }
 
 
+.icon {
+    color: var(--text-light);
+    font-size: 1.5em;
+
+
+}
+
+.inicio {
+    background-color: var(--color-secondary);
+
+}
+
+.txt-drop {
+    color: var(--bg-color);
+}
+
 body {
     width: 100%;
     height: 100%;
