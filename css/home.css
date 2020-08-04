@@ -151,3 +151,18 @@ body {
     height: 90px;
     color: var(--text-light)
 }
+
+.icon {
+    color: var(--text-light);
+    font-size: 1.5em;
+
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .mov {
+        order: 2;
+    }
+
+}
