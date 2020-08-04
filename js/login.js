@@ -20,7 +20,7 @@ login.addEventListener('submit', function () {
 
 
     if ((email == correoDefault) && (clave == passDefault)) {
-        window.location = 'home.html'
+        window.location = 'index.html'
     } else {
 
         let alert = document.getElementById('alertsession')
