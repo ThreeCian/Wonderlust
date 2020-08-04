@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'coneria-script';
+    src: url(../fonts/coneria-script/Demo_ConeriaScript_Slanted.ttf);
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lateef';
+    src: url(../fonts/Lateef/Lateef-Regular.ttf);
+}
+
 :root {
     --color-primary: #00122C;
     --color-secondary: #132F57;
@@ -9,49 +24,26 @@
 
 /* -----------------------------------------------------------*/
 
-#navbar-container {
+.navbar {
     background-color: var(--color-primary);
-    padding: .6em 1em;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
-#navbar-titulo {
+.brand {
     font-family: var(--font-tittle);
     color: var(--text-light);
-    font-size: 2.5em;
 }
 
-#navbar-lista {
-    font-family: var(--font-all);
-    font-size: 1.5em;
-
-    justify-content: flex-end;
+.navbar-nav {
+    font-size: 1.3em;
 }
 
-
-#nav-dropdown {
+.inicio {
     background-color: var(--color-secondary);
-    top: 110%;
+
 }
 
-.dropdown-item {
-    color: white;
-}
-
-#btn-log-in {
-    color: white;
-    background-color: var(--color-secondary);
-    font-weight: bold;
-    margin-right: 1em;
-    padding: .7em;
-}
-
-#btn-log-in:hover {
-    color: var(--color-primary);
-    background-color: white;
-    border: var(--color-primary) solid 1px;
+.txt-drop {
+    color: var(--bg-color);
 }
 
 /* -------- NavBar End ---------- */
@@ -75,7 +67,7 @@ button[data-toggle="collapse"] {
     margin: 1em;
 }
 
-.btn {
+.body-btn {
     width: 100%;
     padding: .5em;
     font-size: 18px;
@@ -87,15 +79,6 @@ button[data-toggle="collapse"] {
     margin-left: .3em;
     margin-bottom: .1em;
 }
-
-/* .nav-a {
-    background-color: var(--color-primary);
-    width: 100%;
-    height: 10vh;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-} */
 
 .bg-europa {
     background-image: url(../images/images-plans/bg-europa-md-jenny-kim-QnQmw0JfQr8-unsplash.jpg);
