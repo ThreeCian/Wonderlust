@@ -1,3 +1,10 @@
+@media screen and (min-width:1200px) {
+    .mov {
+        order: 2;
+    }
+}
+
+
 /*---VARIABLES---*/
 :root {
     --color-primary: #00122C;
@@ -30,12 +37,23 @@ body {
 }
 
 .nav-cambio {
-    background-color: var(--color-primary);
+    background-color: #00122C;
 }
 
-.logo-style {
-    font-family: GreatVibes;
-    font-size: 30px;
+.brand {
+    font-family: var(--font-tittle);
+    color: var(--text-light);
+
+}
+
+.navbar-nav {
+    font-size: 1.3em;
+}
+
+
+
+.txt-drop {
+    color: var(--bg-color);
 }
 
 /*---CAROUSEL---*/
@@ -134,6 +152,30 @@ body {
 
 .whatsapp-icon {
     margin-top: 13px;
+}
+
+/* footer "*/
+.footer {
+    background-color: var(--color-primary);
+    height: 90px;
+    color: var(--text-light)
+}
+
+
+.icon {
+    color: var(--text-light);
+    font-size: 1.5em;
+
+
+}
+
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.txt-f {
+    font-family: var(--font-tittle);
 }
 
 @media screen and (max-width: 480px) {
