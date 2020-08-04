@@ -7,7 +7,7 @@
     <title>programs</title>
     <link rel="stylesheet" href="./css/programs.css">
     <link rel="stylesheet" href="./css/cel-programs.css">
-
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
@@ -34,7 +34,7 @@
                     <a class="nav-link px-lg-3" href="./index.html">Inicio</a>
                 </li>
 
-                <li class="nav-item active  px-lg-3">
+                <li class="nav-item  px-lg-3">
                     <a class="nav-link" href="./about.html">Nosotros</a>
                 </li>
 
@@ -261,7 +261,7 @@
                     <button form="inicios" type="submit" class="btn btn-secondary">
                         Inciar sesión
                     </button>
-                    <button type="button" class="btn inicio text-light" data-toggle="modal" data-dismiss="modal"
+                    <button type="button" class=" btn inicio text-light" data-toggle="modal" data-dismiss="modal"
                         data-target="#registrer">
                         registrarse
 
@@ -286,7 +286,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="./home.html" method="POST">
+                    <form id="regis" action="./home.html" method="POST">
                         <div class="form-group">
                             <label for="Nombre" class="col-form-label">Nombre </label>
                             <input type="Text" class="form-control" id="Nombre" required>
@@ -303,28 +303,33 @@
                         <div class="form-group">
                             <label for="contraseña" class="col-form-label">Contraseña</label>
                             <input type="password" class="form-control" id="contraseña" name="contraseña" required
-                                pattern="[A-Za-z0-9]{5,12" required>
+                                pattern="[A-Za-z0-9]{5,20}">
                         </div>
                         <div class="form-group">
                             <label for="contraseña" class="col-form-label">Repita la contraseña</label>
-                            <input type="password" class="form-control" id="contraseña2" name="contraseña" required
-                                pattern="[A-Za-z0-9]{5,12}" required>
+                            <input type="password" class="form-control" id="contraseña2" name="contraseña"
+                                pattern="[A-Za-z0-9]{5,20}" required>
                         </div>
                         <div>
-                            <input type="checkbox" id="Terminos" name="Terminos">
+                            <input type="checkbox" id="Terminos" name="Terminos" required>
                             <span>Acepto<a href=""> los términos y condiciones </a></span>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <button form="regis" type="submit" class="btn btn-secondary">
                         Aceptar
                     </button>
+                    <!--  <button type="button" class="btn inicio text-light" data-toggle="modal" data-dismiss="modal"
+                        data-target="#registrer">
+                        registrarse
+
+                    </button> -->
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -335,7 +340,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-
 </body>
+
 
 </html>
