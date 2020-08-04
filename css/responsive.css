@@ -1,7 +1,5 @@
 @import url(./style.css);
 
-@import url(./about.css);
-
 @media screen and (min-width:0px) {}
 
 @media screen and (min-width:992px) {
@@ -24,4 +22,3 @@
         order: 2;
     }
 }
-

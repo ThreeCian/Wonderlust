@@ -77,3 +77,18 @@ Body {
 .txt-drop {
     color: var(--bg-color);
 }
+
+
+.color-val:focus:required:valid {
+    box-shadow: 0 0 0 0.2rem #66fa4cbe;
+}
+
+.color-val:focus:required:invalid {
+    box-shadow: 0 0 0 0.2rem #ff1d1da4;
+}
+
+#pass-icon,
+#pass-icon2,
+#pass-icon3 {
+    cursor: pointer;
+}
