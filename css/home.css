@@ -145,3 +145,9 @@ body {
         height: 260px;
     }
 }
+
+.footer {
+    background-color: var(--color-primary);
+    height: 90px;
+    color: var(--text-light)
+}
