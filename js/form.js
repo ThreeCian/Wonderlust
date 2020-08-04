@@ -80,7 +80,7 @@ regis.addEventListener('submit', function () {
         alerta.innerHTML = mssFail
         alerta.hidden = false
     } else {
-        window.location = 'home.html'
+        window.location = 'index.html'
     }
 
 })
