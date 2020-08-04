@@ -1,18 +1,27 @@
 /*---VARIABLES---*/
 :root {
-    --color-azul: #00122C;
-    --text-color: #191919;
-    --color-white: #ffffff;
+    --color-primary: #00122C;
+    --color-secondary: #132F57;
+    --text-light: #ffffff;
+    --bg-color: #f0f6ff;
+    --font-all: 'lateef';
+    --font-tittle: 'GreatVibes';
 
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url(../fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "raimond";
+    src: url(../fonts/Raimond\ FREE.ttf);
 }
 
 body {
     margin: 0;
-}
-
-@font-face {
-    font-family: "greatvibes";
-    src: url(../fuentes/GreatVibes-Regular.ttf)
+    background-color: var(--bg-color);
 }
 
 /*---Navbar---*/
@@ -21,11 +30,11 @@ body {
 }
 
 .nav-cambio {
-    background-color: #00122C;
+    background-color: var(--color-primary);
 }
 
 .logo-style {
-    font-family: greatvibes;
+    font-family: GreatVibes;
     font-size: 30px;
 }
 
@@ -37,19 +46,28 @@ body {
 }
 
 .estilo-fuente {
-    font-family: greatvibes;
+    font-family: raimond;
     font-size: 50px;
 }
 
 
 /*---CONTAINER CIRCULAR---*/
 .parrafo-primero {
-    margin: 1em;
+    margin: 2em;
     text-align: center;
+    padding-top: 5em;
+}
+
+.h1-titulo {
+    font-size: 50 px;
+}
+
+.h2-titulo {
+    color: rgb(199, 191, 191);
 }
 
 .row-esp {
-    margin-left: 2em;
+    margin: 2em
 }
 
 .estilo-prim {
@@ -60,7 +78,7 @@ body {
 
 
 .container-conti {
-    margin: 5em;
+    margin: Auto;
     text-align: center;
 }
 
@@ -71,57 +89,8 @@ body {
     margin-bottom: 2em;
 }
 
-/*---CONTAINER FLIP---*/
-.contenedor {
-    display: flex;
-    margin: 2em;
-    justify-content: center;
-}
 
-
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-
-}
-
-/*anverso y reverso*/
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-/* Giro Horizontal*/
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* frente y reverso */
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-/* Estilo reverso */
-.flip-card-back {
-    background-color: #00122C;
-    color: white;
-    transform: rotateY(180deg);
-}
-
+/*footer 2 */
 .main-information {
     padding-top: 40px;
     display: flex;
@@ -130,20 +99,22 @@ body {
     height: auto;
     line-height: 35px;
     color: #757575;
-    font-family: ;
     font-size: 13.5px;
     cursor: pointer;
+    margin-top: 5em;
 }
+
+
 
 .titulo-link {
     font-size: 18px;
     font-weight: 800;
-    color: var(--color-azul);
+    color: var(--color-primary);
 }
 
 
 .link:hover {
-    color: var(--color-azul);
+    color: var(--color-primary);
 }
 
 /*Whatsapp*/
@@ -163,4 +134,14 @@ body {
 
 .whatsapp-icon {
     margin-top: 13px;
+}
+
+@media screen and (max-width: 480px) {
+    .flip-card {
+        width: 94.5%;
+    }
+
+    .flip-card-inner {
+        height: 260px;
+    }
 }
